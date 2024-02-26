@@ -1,0 +1,678 @@
+@charset "utf-8";
+
+/*
+        Resets
+*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0
+}
+
+:focus {
+    outline: 0
+}
+
+ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+        body Structure
+*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #454545;
+    overflow-x: hidden !important;
+}
+
+/*
+        Typography
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+div,
+p,
+a,
+li,
+td {
+    -webkit-text-size-adjust: none;
+}
+
+html,
+html a {
+    -webkit-font-smoothing: antialiased !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 15px 0;
+    line-height: normal !important;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+p span,
+p strong {
+    font-weight: 800;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+
+
+
+/*misc*/
+.heading-center {
+    display: block;
+    text-align: center;
+    position: relative;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.heading-center h2 {
+    margin-bottom: 0;
+}
+
+.heading {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.heading small {
+    font-size: 18px;
+    color: #014397;
+}
+
+.heading small a {
+    color: inherit;
+}
+
+.heading:after,
+.heading-center:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #014397;
+    position: absolute;
+    bottom: 0;
+}
+
+.heading-center:after {
+    margin: 0 auto;
+    left: 0%;
+    right: 0%;
+}
+
+.heading:after {
+    left: 0%;
+}
+
+.heading span,
+.heading-center span {
+    color: #014397;
+}
+
+.btn-transparent {
+    display: inline-block;
+    padding: 8px 15px;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus,
+.btn-transparent:active,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    background: #4d4d4d !important;
+    border-color: transparent !important;
+    color: #fff;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar {
+    min-height: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+
+.btn {
+    border: none;
+    transition: all 300ms ease-in-out;
+    border-radius: 0 !important;
+}
+
+.btn-default {
+    border: solid 1px #ddd !important;
+    background-color: orangered;
+    color: white;
+}
+
+.btn-primary {
+    background: #014397 !important;
+    color: #fff;
+    border-color: transparent;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: #4d4d4d !important;
+    color: #fff;
+}
+
+.space5 {
+    display: block;
+    clear: both;
+    padding: 5px 0;
+}
+
+.space10 {
+    display: block;
+    clear: both;
+    padding: 10px 0;
+}
+
+.space50 {
+    display: block;
+    padding: 50px 0;
+    clear: both;
+}
+
+.space30 {
+    display: block;
+    padding: 30px 0;
+    clear: both;
+}
+
+.space15 {
+    display: block;
+    padding: 15px;
+    clear: both;
+}
+
+.centertext,
+.center {
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+
+/**********scrollUp**********/
+.scrollup {
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    color: #fff;
+    font-size: 26px;
+    display: none;
+    background: #014397;
+    z-index: 200;
+}
+
+.scrollup:hover {
+    background: #4d4d4d;
+    opacity: 1;
+    color: #fff;
+}
+
+/* My Code  */
+
+
+.mainBody {
+    padding: 50px;
+    background-color: aqua;
+}
+
+
+
+
+/* Banner CSS */
+.banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+
+}
+
+.banner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.bannerBlur {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 60px;
+    left: 90px;
+    color: white;
+    font-size: 60px;
+}
+
+/* logo CSS */
+
+/* Logo Image */
+a img {
+    width: 95px;
+    margin-left: 75px;
+}
+.logoSection img {
+    width: 40px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.logoSection {
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.logoSection h3 {
+    font-size: 20px;
+
+}
+
+/*  Cards CSS */
+.carCards {
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(235, 235, 235);
+}
+.cards {
+    margin: 0 auto;
+    width: 100%;
+    padding: 14px;
+    float: left;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.cards:hover{
+    z-index: 2;
+    transform: scale(1.12);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.cards h4{
+    padding-left: 10px;
+}
+
+.card-1 {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.card-1:hover{
+    transform: scale(1.12);
+    z-index: 2;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+
+.cardimg li{
+    display: inline;
+}
+
+.cardFooter li{
+    display: inline;
+}
+.carCards img {
+    width: 50px;
+}
+
+
+
+.car-images {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cardBottom {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.viewCards {
+    margin: 0 auto;
+}
+
+.footer {
+    padding: 60px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+
+}
+
+.footerLinks i {
+
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+.footerLinks p {
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+
+.chooseCar {
+    padding-bottom: 40px;
+}
+
+.trendingCars  {
+    padding: 0px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.trendingCars:hover{
+ 
+ transform: scale(1.12);
+ z-index: 2;
+}
+.trendingCars img{
+    border-radius: 10px;
+}
+
+.trendingCars p{
+    text-align: center;
+}
+
+.trendingCars h4{
+    text-align: center;
+    font-weight: 500;
+    margin: 0px;
+    font-size: 15px;
+}
+.carbyModel  img{
+    width: 90%;
+    transition: 0.5s;
+}
+
+
+.carbyModel :hover{
+    z-index: 2;
+    transform: scale(1.10);
+}
+.carbyModel button {
+    padding: 10px 15px;
+    border-radius: 12px;
+    background-color: #efefefb0;
+}
+
+.carbyModel button:hover {
+    background-color: rgb(199, 199, 199);
+    transition: 2s;
+}
+
+.car-images {
+    margin: 20px;
+}
+
+.cardHead {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+
+.cardFooter{
+    padding-top: 20px;
+}
+
+.media-left {
+    width: 50px;
+}
+
+.media-body p {
+    font-size: 11px;
+}
+
+.navbar {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cardicon li {
+  display: inline;
+}
+
+
+/*  */
+@media (max-width:768px) {
+
+
+    .banner {
+        position: relative;
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .banner h2 {
+        position: absolute;
+        top: 0px;
+        left: 30px;
+        color: white;
+        font-size: 15px;
+    }
+
+    .navbar {
+        padding: 0px;
+    }
+
+    .row {
+        width: 0px;
+        padding-left: 0px;
+    }
+
+    .carCards {
+        border-radius: 20px;
+        padding: 20px;
+        background-color: rgb(235, 235, 235);
+    }
+
+    .col-md-4 {
+        margin: 0 auto;
+        width: 275px;
+        padding-top: 10px;
+    }
+
+    .footer {
+        padding: 27px;
+        background-color: rgb(235, 235, 235);
+        border-radius: 20px;
+        text-align: center;
+    }
+}
